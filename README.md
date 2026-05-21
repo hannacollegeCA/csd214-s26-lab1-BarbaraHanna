@@ -100,3 +100,51 @@ src/
             └── bookstore/
                 └── pojos/              # Unit Tests
 ```
+
+
+## Lab 1: Analysis — Skincare Niche
+
+# 1. Problem Statement
+
+My niche store specializes in skincare products designed for daily facial care.
+The goal is to offer items that support hydration, cleansing, treatment, and sun protection.
+Each product includes specific characteristics such as recommended skin type, active ingredients, and intended purpose.
+The system must allow users to create, edit, list, and sell skincare items within the existing Product hierarchy.
+
+# 2. Noun / Verb Table
+
+> Nouns
+
+Serum; Moisturizer; Sunscreen; SkinType; Ingredient; Brand; TreatmentLevel; PackagingSize;
+> Verbs
+
+hydrate; apply; absorb; protect; treat
+
+# 3. Synonyms
+
+Serum = Essence
+Moisturizer = Cream
+
+## 4. AI-Assisted Architectural Blueprint
+I am a Java student building a system using a base class called 'Product'. I need to design a sub-hierarchy for a store that sells skincare products.
+   Based on the principles of OO Analysis, please design:
+
+An Abstract Class representing the category (e.g., SkincareProduct) that extends Product. It should have 1 unique field common to all items in this niche.
+
+Two Concrete Classes (e.g., Serum, Moisturizer) that extend that abstract class. Each should have 1 unique field specific to them.
+List the class names, their parent class, and their specific fields with data types."
+
+# AI Response:
+
+> Abstract Class:
+
+SkincareProduct extends Product
+Shared field: String skinType
+
+> Concrete Classes:
+
+Serum extends SkincareProduct
+Unique field: String activeIngredient
+
+Moisturizer extends SkincareProduct
+Unique field: boolean oilFree
